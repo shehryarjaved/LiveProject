@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact/HurrainEstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href="index.html"><img src="images/logo/logo2.png" alt="" class="logo"></a>
+
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="35px" height="35px" alt=""></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- 
+    <!-- contact Details------ -->
+    <section id="fancy-form1">
+        <div class="container-1">
+            <div class="form-sections1">
+                <!-- Form left -->
+                <div class="Form-left1">
+                    <h1>Get In Touch</h1>
+                    <div class="line"></div>
+                    <!--border-bottom line-->
+                    <p>Contact us for latest news and updates. subscribe our news letter :)</p><br>
+
+                    <!--first Heading -->
+                    <h4>ADDRESS</h4>
+                    <span>123, Main Street, New York 1001</span>
+                    <hr><br><br>
+
+                    <!--second Heading -->
+                    <h4>PHONE</h4>
+                    <span>+92214310583</span>
+                    <hr><br><br>
+
+                    <!--third Heading -->
+                    <h4>EMAIL</h4>
+                    <span>Shehryarjaved007@gmail.com</span>
+                    <hr> <br>
+
+                    <!-- social media icons -->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+
+                <!-- form right -->
+                <div class="Form-right1">
+                    <h1>Contact Us</h1>
+                    <div class="line1"></div>
+                    <!-- form -->
+                    <form class="form" action="">
+                        <h5>NAME</h5>
+                        <input type="text"><br><br>
+                        <h5>EMAIL</h5>
+                        <input type="email"><br><br>
+                        <h5>PHONE</h5>
+                        <input type="text"><br><br>
+                        <h5>YOUR MESSAGE</h5>
+                        <textarea name="" id="" cols="50" rows="7"></textarea><br>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="small-container2">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.667612390647!2d66.96748846544538!3d24.909316999431216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3153c8de4251b%3A0xc13ba4ec662be53c!2sRasheedabad%20Saeedabad%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1613593388657!5m2!1sen!2s"
+            width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+
+
+
+
+
+
+
+    <!-- --footer---- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="foo-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="foo-col-2">
+
+                    <div class="row">
+                        <img src="images/logo/fo-whitelogo.png" alt="" style="width: 250px; height: 200px;">
+                    </div>
+                    <div class="row">
+                        <p style="padding-top: 0px;">Our purpose is Substainbly Make The pleasure And
+                            Benefits of Sports Accessible To The Many</p>
+                    </div>
+
+
+                </div>
+
+                <div class="foo-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policiy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="foo-col-4">
+                    <ul>
+                        <h3>Follow Us</h3>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2021-22 All Rights Reserved -Shehryar Javed</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- js for toggle -->
+
+    <script>
+
+        var menuitems = document.getElementById('menuitems');
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle() {
+
+
+            if (menuitems.style.maxHeight == "0px") {
+
+                menuitems.style.maxHeight = "200px";
+            }
+            else {
+
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
